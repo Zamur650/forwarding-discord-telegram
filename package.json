@@ -28,12 +28,10 @@
     "url": "https://tapni.su"
   },
   "dependencies": {
-    "2captcha": "^3.0.7",
     "@grammyjs/auto-retry": "^1.1.1",
-    "discord.js-selfbot-v13": "^3.1.4",
+    "discord.js": "^13.17.1",
     "dotenv": "^16.4.5",
     "grammy": "^1.21.1",
-    "node-capmonster": "^0.4.2",
     "typescript": "^5.4.2"
   },
   "devDependencies": {

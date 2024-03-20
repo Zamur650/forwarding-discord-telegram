@@ -1,4 +1,4 @@
-import { Message, PartialMessage } from "discord.js-selfbot-v13";
+import { Message, PartialMessage } from "discord.js";
 import { Config } from "./config.js";
 
 export function filterMessages(

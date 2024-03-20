@@ -5,24 +5,18 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  2captcha:
-    specifier: ^3.0.7
-    version: 3.0.7
   '@grammyjs/auto-retry':
     specifier: ^1.1.1
     version: 1.1.1
-  discord.js-selfbot-v13:
-    specifier: ^3.1.4
-    version: 3.1.4
+  discord.js:
+    specifier: ^13.17.1
+    version: 13.17.1
   dotenv:
     specifier: ^16.4.5
     version: 16.4.5
   grammy:
     specifier: ^1.21.1
     version: 1.21.1
-  node-capmonster:
-    specifier: ^0.4.2
-    version: 0.4.2
   pm2:
     specifier: '>=5.3.0'
     version: 5.3.1
@@ -55,51 +49,27 @@ devDependencies:
 
 packages:
 
-  /2captcha@3.0.7:
-    resolution: {integrity: sha512-i7iswxBsNzzFxQCebgdowHW61UK34+o8KaDonJxRH+gDDeQsiN/3uK0X/fo4AmMTE26c4VSHVe0X8b8CVVNZiw==}
-    dependencies:
-      node-fetch: 2.7.0
-    transitivePeerDependencies:
-      - encoding
-    dev: false
-
   /@aashutoshrathi/word-wrap@1.2.6:
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /@aikochan2k6/qrcode-terminal@0.12.1:
-    resolution: {integrity: sha512-GfSrCCqKti0XyomCOaFRL//dnEpDux4tJleywuYChjHue+pqjM0lP39cQq8qtmfcOm1CqhWQeB6JS6kY4tQ8Tw==}
-    dev: false
-
-  /@discordjs/builders@1.7.0:
-    resolution: {integrity: sha512-GDtbKMkg433cOZur8Dv6c25EHxduNIBsxeHrsRoIM8+AwmEZ8r0tEpckx/sHwTLwQPOF3e2JWloZh9ofCaMfAw==}
-    engines: {node: '>=16.11.0'}
+  /@discordjs/builders@0.16.0:
+    resolution: {integrity: sha512-9/NCiZrLivgRub2/kBc0Vm5pMBE5AUdYbdXsLu/yg9ANgvnaJ0bZKTY8yYnLbsEc/LYUP79lEIdC73qEYhWq7A==}
+    engines: {node: '>=16.9.0'}
+    deprecated: no longer supported
     dependencies:
-      '@discordjs/formatters': 0.3.3
-      '@discordjs/util': 1.0.2
       '@sapphire/shapeshift': 3.9.6
-      discord-api-types: 0.37.61
+      discord-api-types: 0.36.3
       fast-deep-equal: 3.1.3
       ts-mixer: 6.0.3
       tslib: 2.6.2
     dev: false
 
-  /@discordjs/collection@1.5.3:
-    resolution: {integrity: sha512-SVb428OMd3WO1paV3rm6tSjM4wC+Kecaa1EUGX7vc6/fddvw/6lg90z4QtCqm21zvVe92vMMDt9+DkIvjXImQQ==}
-    engines: {node: '>=16.11.0'}
-    dev: false
-
-  /@discordjs/formatters@0.3.3:
-    resolution: {integrity: sha512-wTcI1Q5cps1eSGhl6+6AzzZkBBlVrBdc9IUhJbijRgVjCNIIIZPgqnUj3ntFODsHrdbGU8BEG9XmDQmgEEYn3w==}
-    engines: {node: '>=16.11.0'}
-    dependencies:
-      discord-api-types: 0.37.61
-    dev: false
-
-  /@discordjs/util@1.0.2:
-    resolution: {integrity: sha512-IRNbimrmfb75GMNEjyznqM1tkI7HrZOf14njX7tCAAUetyZM1Pr8hX/EK2lxBCOgWDRmigbp24fD1hdMfQK5lw==}
-    engines: {node: '>=16.11.0'}
+  /@discordjs/collection@0.7.0:
+    resolution: {integrity: sha512-R5i8Wb8kIcBAFEPLLf7LVBQKBDYUL+ekb23sOgpkpyGT+V4P7V83wTxcsqmX+PbqHt4cEHn053uMWfRqh/Z/nA==}
+    engines: {node: '>=16.9.0'}
+    deprecated: no longer supported
     dev: false
 
   /@eslint-community/eslint-utils@4.4.0(eslint@8.57.0):
@@ -583,16 +553,6 @@ packages:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
     dev: false
 
-  /axios@1.6.7:
-    resolution: {integrity: sha512-/hDJGff6/c7u0hDkvkGxR/oy6CbCs8ziCsC7SqmhjfozqiJGc8Z11wrv9z9lYfY4K8l+H9TpjcMDX0xOZmx+RA==}
-    dependencies:
-      follow-redirects: 1.15.5
-      form-data: 4.0.0
-      proxy-from-env: 1.1.0
-    transitivePeerDependencies:
-      - debug
-    dev: false
-
   /balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
@@ -792,30 +752,26 @@ packages:
       path-type: 4.0.0
     dev: true
 
-  /discord-api-types@0.37.61:
-    resolution: {integrity: sha512-o/dXNFfhBpYHpQFdT6FWzeO7pKc838QeeZ9d91CfVAtpr5XLK4B/zYxQbYgPdoMiTDvJfzcsLW5naXgmHGDNXw==}
+  /discord-api-types@0.33.5:
+    resolution: {integrity: sha512-dvO5M52v7m7Dy96+XUnzXNsQ/0npsYpU6dL205kAtEDueswoz3aU3bh1UMoK4cQmcGtB1YRyLKqp+DXi05lzFg==}
     dev: false
 
-  /discord-api-types@0.37.69:
-    resolution: {integrity: sha512-c0rHc5YGNIXQkI+V7QwP8y77wxo74ITNeZmMwxtKC/l01aIF/gKBG/U2MKhUt2iaeRH9XwAt9PT3AI9JQVvKVA==}
+  /discord-api-types@0.36.3:
+    resolution: {integrity: sha512-bz/NDyG0KBo/tY14vSkrwQ/n3HKPf87a0WFW/1M9+tXYK+vp5Z5EksawfCWo2zkAc6o7CClc0eff1Pjrqznlwg==}
     dev: false
 
-  /discord.js-selfbot-v13@3.1.4:
-    resolution: {integrity: sha512-MkUBnrRKIFsA8M/9IUxrGzZNJypzwA5mwyF3ZV4NJldHw6Z8GBAnkmH10rK8B2uUuCY+tfMSHbOxo796LUZiYg==}
+  /discord.js@13.17.1:
+    resolution: {integrity: sha512-h13kUf+7ZaP5ZWggzooCxFutvJJvugcAO54oTEIdVr3zQWi0Sf/61S1kETtuY9nVAyYebXR/Ey4C+oWbsgEkew==}
     engines: {node: '>=16.6.0', npm: '>=7.0.0'}
     dependencies:
-      '@aikochan2k6/qrcode-terminal': 0.12.1
-      '@discordjs/builders': 1.7.0
-      '@discordjs/collection': 1.5.3
+      '@discordjs/builders': 0.16.0
+      '@discordjs/collection': 0.7.0
       '@sapphire/async-queue': 1.5.2
-      '@sapphire/shapeshift': 3.9.6
       '@types/node-fetch': 2.6.11
       '@types/ws': 8.5.10
-      discord-api-types: 0.37.69
-      fetch-cookie: 2.2.0
+      discord-api-types: 0.33.5
       form-data: 4.0.0
       node-fetch: 2.7.0
-      tough-cookie: 4.1.3
       ws: 8.16.0
     transitivePeerDependencies:
       - bufferutil
@@ -1056,13 +1012,6 @@ packages:
     resolution: {integrity: sha512-GDqVQezKzRABdeqflsgMr7ktzgF9CyS+p2oe0jJqUY6izSSbhPIQJDpoU4PtGcD7VPM9xh/dVrTu6z1nwgmEGw==}
     dev: false
 
-  /fetch-cookie@2.2.0:
-    resolution: {integrity: sha512-h9AgfjURuCgA2+2ISl8GbavpUdR+WGAM2McW/ovn4tVccegp8ZqCKWSBR8uRdM8dDNlx5WdKRWxBYUwteLDCNQ==}
-    dependencies:
-      set-cookie-parser: 2.6.0
-      tough-cookie: 4.1.3
-    dev: false
-
   /file-entry-cache@6.0.1:
     resolution: {integrity: sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg==}
     engines: {node: ^10.12.0 || >=12.0.0}
@@ -1096,16 +1045,6 @@ packages:
   /flatted@3.2.9:
     resolution: {integrity: sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==}
     dev: true
-
-  /follow-redirects@1.15.5:
-    resolution: {integrity: sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw==}
-    engines: {node: '>=4.0'}
-    peerDependencies:
-      debug: '*'
-    peerDependenciesMeta:
-      debug:
-        optional: true
-    dev: false
 
   /follow-redirects@1.15.5(debug@4.3.4):
     resolution: {integrity: sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw==}
@@ -1530,14 +1469,6 @@ packages:
     engines: {node: '>= 0.4.0'}
     dev: false
 
-  /node-capmonster@0.4.2:
-    resolution: {integrity: sha512-+1rLmPaplHZPSGcDnnmqT57U8v2v+uLTUrZ5sMIKuo2Mjh80q/DuXUevWAagfs5nfn76SHJoQMvUVhOxC7OCDA==}
-    dependencies:
-      axios: 1.6.7
-    transitivePeerDependencies:
-      - debug
-    dev: false
-
   /node-fetch@2.7.0:
     resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
     engines: {node: 4.x || >=6.0.0}
@@ -1807,17 +1738,10 @@ packages:
     resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
     dev: false
 
-  /psl@1.9.0:
-    resolution: {integrity: sha512-E/ZsdU4HLs/68gYzgGTkMicWTLPdAftJLfJFlLUAAKZGkStNU72sZjT66SnMDVOfOWY/YAoiD7Jxa9iHvngcag==}
-    dev: false
-
   /punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
-
-  /querystringify@2.2.0:
-    resolution: {integrity: sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==}
-    dev: false
+    dev: true
 
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
@@ -1846,10 +1770,6 @@ packages:
       resolve: 1.22.8
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  /requires-port@1.0.0:
-    resolution: {integrity: sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==}
     dev: false
 
   /resolve-from@4.0.0:
@@ -1919,10 +1839,6 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
-
-  /set-cookie-parser@2.6.0:
-    resolution: {integrity: sha512-RVnVQxTXuerk653XfuliOxBP81Sf0+qfQE73LIYKcyMYHG94AuH0kgrQpRDuTZnSmjpysHmzxJXKNfa6PjFhyQ==}
-    dev: false
 
   /shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
@@ -2047,16 +1963,6 @@ packages:
     dependencies:
       is-number: 7.0.0
 
-  /tough-cookie@4.1.3:
-    resolution: {integrity: sha512-aX/y5pVRkfRnfmuX+OdbSdXvPe6ieKX/G2s7e98f4poJHnqH3281gDPm/metm6E/WRamfx7WC4HUqkWHfQHprw==}
-    engines: {node: '>=6'}
-    dependencies:
-      psl: 1.9.0
-      punycode: 2.3.1
-      universalify: 0.2.0
-      url-parse: 1.5.10
-    dev: false
-
   /tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
     dev: false
@@ -2114,11 +2020,6 @@ packages:
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
-  /universalify@0.2.0:
-    resolution: {integrity: sha512-CJ1QgKmNg3CwvAv/kOFmtnEN05f0D/cn9QntgNOQlQF9dgvVTHj3t+8JPdjqawCHk7V/KA+fbUqzZ9XWhcqPUg==}
-    engines: {node: '>= 4.0.0'}
-    dev: false
-
   /universalify@2.0.1:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
@@ -2129,13 +2030,6 @@ packages:
     dependencies:
       punycode: 2.3.1
     dev: true
-
-  /url-parse@1.5.10:
-    resolution: {integrity: sha512-WypcfiRhfeUP9vvF0j6rw0J3hrWrw6iZv3+22h6iRMJ/8z1Tj6XfLP4DsUix5MhMPnXpiHDoKyoZ/bdCkwBCiQ==}
-    dependencies:
-      querystringify: 2.2.0
-      requires-port: 1.0.0
-    dev: false
 
   /uuid@3.4.0:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}

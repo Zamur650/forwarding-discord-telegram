@@ -1,4 +1,4 @@
-import { Client, Message, PartialMessage } from "discord.js-selfbot-v13";
+import { Client, Message, PartialMessage } from "discord.js";
 import { Config } from "./config.js";
 import { filterMessages } from "./filterMessages.js";
 import { formatSize } from "./format.js";
@@ -11,7 +11,9 @@ export class Bot extends Client {
   config: Config;
 
   constructor(config: Config, senderBot: SenderBot) {
-    super();
+    super({
+      intents: ["GUILDS", "MESSAGE_CONTENT", "GUILD_MESSAGES"]
+    });
 
     this.config = config;
     this.senderBot = senderBot;
